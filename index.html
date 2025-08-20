@@ -1,86 +1,148 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <title>SocialSaver – App Homepage</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SocialSaver – Inhalte speichern & später ansehen</title>
+  <meta name="description" content="Mit SocialSaver kannst du deine Lieblingsinhalte aus Social Media einfach speichern und später wieder ansehen – schnell, simpel, kostenlos." />
+  <meta name="robots" content="index,follow" />
   <style>
-    body {
-      font-family: system-ui, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
+    :root{
+      --bg:#0f1115; --card:#171a21; --text:#e8eaed; --muted:#b5b9c3; --accent:#6ea8fe;
+      --shadow:0 10px 30px rgba(0,0,0,.25);
     }
-    header {
-      background: #2d2d2d;
-      color: white;
-      padding: 20px;
-      text-align: center;
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;color:var(--text);background:var(--bg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+    header{
+      position:sticky;top:0;z-index:10;background:rgba(15,17,21,.85);
+      backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid rgba(255,255,255,.06)
     }
-    header img {
-      height: 60px;
-      display: block;
-      margin: 0 auto 10px;
-    }
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      margin-top: 40px;
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{font-weight:700;font-size:18px;letter-spacing:.2px}
+    .menu{display:flex;gap:18px;font-weight:500}
+    .hero{padding:56px 0 28px;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0) 60%)}
+    .hero-inner{display:grid;grid-template-columns:1fr;gap:20px;align-items:center}
+    .logo{width:80px;height:80px;border-radius:20px;box-shadow:var(--shadow);display:block;object-fit:cover}
+    h1{font-size:34px;margin:8px 0 6px}
+    p.lead{color:var(--muted);font-size:16px;line-height:1.6;margin:0}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;box-shadow:var(--shadow);padding:18px}
+    ul.features{margin:12px 0 0 0;padding-left:18px}
+    .cta{display:inline-block;margin-top:14px;padding:12px 16px;border-radius:12px;background:#1f6feb;color:#fff;font-weight:600}
+    .cta:hover{filter:brightness(1.05)}
+    section{scroll-margin-top:80px;margin:26px 0}
+    h2{font-size:22px;margin:0 0 10px}
+    .muted{color:var(--muted)}
+    footer{border-top:1px solid rgba(255,255,255,.08);margin-top:32px}
+    footer .wrap{display:flex;justify-content:space-between;gap:16px;padding:16px 20px}
+    @media (min-width:800px){
+      .hero-inner{grid-template-columns:96px 1fr}
+      h1{font-size:42px}
+      p.lead{font-size:18px}
     }
   </style>
 </head>
 <body>
   <header>
-    <!-- Dein Logo -->
-    <img src="IMG_9564.png" alt="SocialSaver Logo">
-    <h1>SocialSaver</h1>
-    <nav>
-      <a href="index.html">Startseite</a>
-      <a href="impressum.html">Kontakt & Impressum</a>
-      <a href="privacy-policy.html">Datenschutz</a>
-    </nav>
+    <div class="wrap nav">
+      <div class="brand">SocialSaver</div>
+      <nav class="menu">
+        <a href="#home">Startseite</a>
+        <a href="#kontakt">Kontakt &amp; Impressum</a>
+        <a href="#datenschutz">Datenschutz</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Willkommen bei SocialSaver</h2>
-    <p>Mit der SocialSaver-App kannst du deine Lieblingsinhalte von Social Media einfach und schnell speichern.</p>
+  <main class="wrap">
+    <!-- Startseite -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <img class="logo" src="IMG_9564.png" alt="SocialSaver Logo" />
+        <div>
+          <h1>Willkommen bei SocialSaver</h1>
+          <p class="lead">
+            Mit der SocialSaver-App kannst du deine Lieblingsinhalte aus Social Media
+            einfach <strong>speichern</strong> und jederzeit wieder <strong>ansehen</strong> – übersichtlich, schnell und kostenlos.
+          </p>
+          <div class="card" style="margin-top:14px">
+            <h2 style="margin-top:0">Features</h2>
+            <ul class="features">
+              <li>Einfache Bedienung</li>
+              <li>Schnelles Speichern von Inhalten</li>
+              <li>Kostenlos nutzbar</li>
+            </ul>
+            <a class="cta" href="https://play.google.com/store/apps/details?id=com.downloader.instaapp&utm_source=emea_Med&pli=1" target="_blank" rel="noopener">
+              Jetzt im Google Play Store ansehen
+            </a>
+          </div>
+          <p class="muted" style="margin-top:10px;font-size:13px">
+            Hinweis: SocialSaver ist für das Sichern eigener Inhalte oder solcher,
+            für die du die erforderlichen Rechte hast. Bitte beachte die Nutzungsbedingungen
+            der jeweiligen Plattformen.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <h3>Features:</h3>
-    <ul>
-      <li>Einfache Bedienung</li>
-      <li>Schneller Download von Social Media Inhalten</li>
-      <li>Kostenlos nutzbar</li>
-    </ul>
+    <!-- Kontakt & Impressum -->
+    <section id="kontakt" class="card">
+      <h2>Kontakt &amp; Impressum</h2>
+      <p><strong>Verantwortlich:</strong> Miriam Mohamad</p>
+      <p>
+        <strong>Adresse:</strong> Iburger Ufer 6, 10587 Berlin<br />
+        <strong>E-Mail:</strong> <a href="mailto:babypimp@web.de">babypimp@web.de</a>
+      </p>
+      <p class="muted" style="font-size:13px">
+        Inhalte dieser Seite wurden mit größter Sorgfalt erstellt. Für externe Links
+        wird keine Haftung übernommen. Bei Hinweisen zu Inhalten bitte per E-Mail melden.
+      </p>
+    </section>
 
-    <p><a href="https://play.google.com/store/apps/details?id=com.downloader.instaapp">
-      Jetzt im Google Play Store herunterladen</a></p>
+    <!-- Datenschutz -->
+    <section id="datenschutz" class="card">
+      <h2>Datenschutz</h2>
+      <p>
+        <strong>Verantwortliche Stelle:</strong> Miriam Mohamad, Iburger Ufer 6, 10587 Berlin,
+        <a href="mailto:babypimp@web.de">babypimp@web.de</a>
+      </p>
+      <p>
+        <strong>Hosting:</strong> Diese Website wird auf GitHub Pages bereitgestellt.
+        Beim Aufruf können technische Protokolldaten (z.&nbsp;B. IP-Adresse, Zeitpunkt, Browser)
+        verarbeitet werden, um den sicheren Betrieb zu gewährleisten.
+      </p>
+      <p><strong>Cookies/Tracking:</strong> Auf dieser Website werden keine Tracking-Cookies gesetzt.</p>
+      <p>
+        <strong>Externe Dienste:</strong> Die App kann Werbedienste (z.&nbsp;B. Google AdMob) nutzen.
+        Die dazugehörige Datenverarbeitung findet innerhalb der App gemäß deren Datenschutzhinweisen statt.
+        Im Google Play Store gelten die Richtlinien von Google.
+      </p>
+      <p>
+        <strong>Rechtsgrundlagen &amp; Rechte:</strong> Soweit personenbezogene Daten
+        verarbeitet werden, geschieht dies auf Grundlage berechtigter Interessen an einem
+        sicheren und funktionsfähigen Angebot bzw. deiner Einwilligung. Du hast das Recht
+        auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch sowie Datenübertragbarkeit
+        im Rahmen der gesetzlichen Vorgaben. Beschwerden kannst du an die zuständige
+        Datenschutzaufsichtsbehörde richten.
+      </p>
+      <p class="muted" style="font-size:13px">
+        Änderungen dieser Hinweise bleiben vorbehalten, um sie an rechtliche Vorgaben
+        oder Funktionsänderungen anzupassen.
+      </p>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 SocialSaver – Alle Rechte vorbehalten</p>
-    <p>
-      <a href="impressum.html">Kontakt & Impressum</a> | 
-      <a href="privacy-policy.html">Datenschutz</a>
-    </p>
+    <div class="wrap">
+      <span class="muted">© <span id="y"></span> SocialSaver</span>
+      <span><a href="#datenschutz">Datenschutz</a></span>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
