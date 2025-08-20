@@ -1,75 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SocialSaver App</title>
+  <meta charset="utf-8">
+  <title>SocialSaver – App Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      font-family: system-ui, Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
-    }
-    header {
-      background: #4CAF50;
-      color: white;
-      padding: 20px;
-    }
-    header img {
-      max-width: 120px;
-      display: block;
-      margin: 0 auto 10px;
-    }
-    .container {
-      margin-top: 50px;
-    }
-    h1 {
+      background: #f9f9f9;
       color: #333;
     }
-    p {
-      font-size: 18px;
-      color: #555;
+    header {
+      background: #2d2d2d;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
-    .play-badge {
-      margin-top: 20px;
-    }
-    .links {
-      margin-top: 40px;
-    }
-    .links a {
-      display: block;
-      margin: 10px 0;
-      color: #4CAF50;
+    nav a {
+      color: white;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
     }
-    .links a:hover {
+    nav a:hover {
       text-decoration: underline;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <!-- Logo -->
-    <img src="IMG_9564.png" alt="SocialSaver Logo">
-    <h1>Welcome to SocialSaver</h1>
+    <h1>SocialSaver</h1>
+    <nav>
+      <a href="index.html">Startseite</a>
+      <a href="kontakt-impressum.html">Kontakt & Impressum</a>
+    </nav>
   </header>
 
-  <div class="container">
-    <p>Download our app now on Google Play:</p>
-    <div class="play-badge">
-      <a href="https://play.google.com/store/apps/details?id=com.downloader.instaapp" target="_blank">
-        <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" width="200">
-      </a>
-    </div>
+  <main>
+    <h2>Willkommen bei SocialSaver</h2>
+    <p>Mit der SocialSaver-App kannst du deine Lieblingsinhalte von Social Media einfach und schnell speichern.</p>
 
-    <div class="links">
-      <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
-      <a href="app-ads.txt" target="_blank">app-ads.txt</a>
-      <a href="contact.html" target="_blank">Kontakt & Impressum</a>
-    </div>
-  </div>
+    <h3>Features:</h3>
+    <ul>
+      <li>Einfache Bedienung</li>
+      <li>Schneller Download von Social Media Inhalten</li>
+      <li>Kostenlos nutzbar</li>
+    </ul>
+
+    <p><a href="https://play.google.com/store/apps/details?id=com.downloader.instaapp">Jetzt im Google Play Store herunterladen</a></p>
+  </main>
+
+  <footer>
+    <p>© 2025 SocialSaver – Alle Rechte vorbehalten</p>
+    <p><a href="kontakt-impressum.html">Kontakt & Impressum</a></p>
+  </footer>
 </body>
 </html>
