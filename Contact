@@ -4,8 +4,21 @@
   <meta charset="utf-8">
   <title>Kontakt & Impressum – SocialSaver</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      max-width: 800px; 
+      margin: 40px auto; 
+      padding: 20px; 
+      line-height: 1.6; 
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 { color: #2d2d2d; }
+    a { color: #0066cc; }
+  </style>
 </head>
-<body style="max-width:720px;margin:40px auto;font-family:system-ui,Arial">
+<body>
   <h1>Kontakt & Impressum</h1>
 
   <h2>Kontakt</h2>
@@ -17,14 +30,20 @@
      Iburger Ufer 6<br>
      10587 Berlin</p>
 
-  <p><strong>E-Mail:</strong> <a href="mailto:babypimp@web.de">babypimp@web.de</a></p>
+  <p><strong>E-Mail:</strong> 
+     <a href="mailto:babypimp@web.de">babypimp@web.de</a>
+  </p>
 
   <h3>Haftungshinweis</h3>
-  <p>Alle Angaben ohne Gewähr. Externe Links führen zu Inhalten Dritter, für die die jeweiligen Anbieter verantwortlich sind.</p>
+  <p>Alle Angaben ohne Gewähr. Externe Links führen zu Inhalten Dritter, 
+     für die die jeweiligen Anbieter verantwortlich sind.</p>
 
   <h3>Streitbeilegung</h3>
   <p>Die EU-Plattform zur Online-Streitbeilegung: 
-     <a href="https://ec.europa.eu/consumers/odr/">ec.europa.eu/consumers/odr/</a></p>
+     <a href="https://ec.europa.eu/consumers/odr/" target="_blank">
+       https://ec.europa.eu/consumers/odr/
+     </a>
+  </p>
 
   <p><a href="index.html">← Zurück zur Startseite</a></p>
 </body>
