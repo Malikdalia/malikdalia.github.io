@@ -1,46 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
   <title>Kontakt & Impressum – SocialSaver</title>
-  <style>
-    body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;margin:20px;background:#f9f9f9;color:#333}
-    h1,h2{color:#4CAF50}
-    a{color:#4CAF50;text-decoration:none} a:hover{text-decoration:underline}
-    .box{background:#fff;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.06);padding:18px;margin-bottom:16px}
-    .muted{color:#777}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body style="max-width:720px;margin:40px auto;font-family:system-ui,Arial">
   <h1>Kontakt & Impressum</h1>
 
-  <div class="box">
-    <h2>Verantwortlich für diese App / Website</h2>
-    <p><strong>Name:</strong> Miriam Mohamad</p>
-    <p><strong>E-Mail:</strong> <a href="mailto:babypimp@web.de">babypimp@web.de</a></p>
-  </div>
+  <h2>Kontakt</h2>
+  <p>E-Mail: <a href="mailto:babypimp@web.de">babypimp@web.de</a></p>
 
-  <div class="box">
-    <h2>Kontakt</h2>
-    <p>Für Support-Anfragen, Feedback oder rechtliche Anliegen nutze bitte diese E-Mail-Adresse:
-      <a href="mailto:babypimp@web.de">babypimp@web.de</a>.
-    </p>
-  </div>
+  <h2>Impressum</h2>
+  <p><strong>Diensteanbieter:</strong><br>
+     Miriam Mohamad<br>
+     Iburger Ufer 6<br>
+     10587 Berlin</p>
 
-  <div class="box">
-    <h2>Haftungshinweis</h2>
-    <p>Alle Inhalte wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
-       Aktualität der Inhalte übernehmen wir keine Gewähr.</p>
-  </div>
+  <p><strong>E-Mail:</strong> <a href="mailto:babypimp@web.de">babypimp@web.de</a></p>
 
-  <div class="box">
-    <h2>Datenschutz</h2>
-    <p>Informationen zur Verarbeitung personenbezogener Daten findest du in unserer
-      <a href="privacy-policy.html">Datenschutzerklärung</a>.
-    </p>
-  </div>
+  <h3>Haftungshinweis</h3>
+  <p>Alle Angaben ohne Gewähr. Externe Links führen zu Inhalten Dritter, für die die jeweiligen Anbieter verantwortlich sind.</p>
 
-  <p class="muted">© 2025 SocialSaver</p>
+  <h3>Streitbeilegung</h3>
+  <p>Die EU-Plattform zur Online-Streitbeilegung: 
+     <a href="https://ec.europa.eu/consumers/odr/">ec.europa.eu/consumers/odr/</a></p>
+
+  <p><a href="index.html">← Zurück zur Startseite</a></p>
 </body>
 </html>
