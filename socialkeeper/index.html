@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Social Keeper – Download</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      window.location.href = "https://play.google.com/store/apps/details?id=com.socialsave.app";
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      window.location.href = "https://apps.apple.com/de/app/social-keeper/id6743745666";
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    a {
+      display: block;
+      margin: 15px auto;
+      padding: 15px;
+      max-width: 300px;
+      text-decoration: none;
+      color: white;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+    .android { background: #34A853; }
+    .ios { background: #000000; }
+  </style>
+</head>
+
+<body>
+  <h1>Social Keeper</h1>
+  <p>Jetzt kostenlos herunterladen</p>
+
+  <a class="android" href="https://play.google.com/store/apps/details?id=com.socialsave.app">
+    📲 Google Play Store
+  </a>
+
+  <a class="ios" href="https://apps.apple.com/de/app/social-keeper/id6743745666">
+    🍎 Apple App Store
+  </a>
+</body>
+</html>
